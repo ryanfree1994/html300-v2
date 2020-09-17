@@ -1,0 +1,12 @@
+h1{
+  padding: 0.25em;
+  font-family: sans-serif;
+}
+.non-h1-body{
+  padding: 0.5em;
+  font-family: sans-serif;
+}
+#array_one, #array_two, #array_three, #array_four{
+  color: blue;
+  padding-top: 1em;
+}
