@@ -6,7 +6,7 @@ h1{
   padding: 0.5em;
   font-family: sans-serif;
 }
-#array_one, #array_two, #array_three, #array_four{
+[id^="array_"]{
   color: blue;
   padding-top: 1em;
 }

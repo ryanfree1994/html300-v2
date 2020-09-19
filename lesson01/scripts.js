@@ -22,10 +22,10 @@ $(document).ready(function(){
 /*this is the third input function -- checking if a number is in the array*/
 
   $('.submit_three').click(function(){
-    let input = +$('.input_three').val(); /*must include + or unary operator bc input returns string and includes checks only similar object types*/
+    let input = +$('.input_three').val(); /*Using + or unary operator to convert string input to number; 'includes' checks only similar object types.*/
     let number_check = array.includes(input);
-    let number_check_output = number_check.toString();
-    $('#array_three').html(`The number you provided has been checked if it is in the array: ${number_check_output}.`);
+    //let number_check_output = number_check.toString(); this isn't necessary, as JS can understand number vs string
+    $('#array_three').html(`The number you provided has been checked if it is in the array: ${number_check}.`);
     });
 
 /*this is the fourth input function -- it will calculate the sum of the array*/
@@ -33,7 +33,7 @@ $(document).ready(function(){
   $('.submit_four').click(function(){
     let user_number = +$('.input_four').val();
     array.push(user_number);
-    let sum = 0;
+    //let sum = 0; this isn't necessary, as reduce will use the first element in the array if there is no initial value provided
     let total = array.reduce((sum, value) => (sum += value));
     $('#array_four').html(`Here is the array total: ${total}.`);
   });
