@@ -4,3 +4,97 @@
 @import 'settings.responsive';
 @import 'components.content';
 
+.main{
+  background-color: $gray;
+  width: 951px;
+  height: 474px;
+
+//media query mixin to change first background height and width for screen//
+  @include $mq {
+    width: auto;
+    height: 100%;
+  }
+
+  &__first-background{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    background-color: $white;
+    width: 847px;
+    height: 383px;
+
+  //media query mixin to change flex direction to columns and height and width for screen//
+    @include $mq{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: auto;
+      height: 100%;
+    }
+  }
+  &__head-title{
+    padding: 1em 0 1em 0;
+    text-align: center;
+    width: 40%;
+    align-self: center;
+
+  //media query mixin to change padding for screen//
+    @include $mq{
+      padding: 1em;
+      width: auto;
+    }
+  }
+  &__h1{
+    font-size: 26px;
+    color: darken($gray, 40%);
+  }
+  &__p{
+    color: darken($gray, 20%);
+    font-style: italic;
+    font-size: 20px;
+
+  //media query mixin to change font size for screen//
+    @include $mq{
+      font-size: 16px;
+    }
+  }
+  &__img-headshot{
+    width: 60%;
+    border-radius: 50%;
+
+  //media query mixin to change image size for screen//
+    @include $mq{
+      width: 100%;
+    }
+  }
+  &__card-content{
+    background-color: $gray;
+    padding: 0 5em 0 2em;
+    align-self: center;
+
+  //media query mixin to change content card padding for screen//
+    @include $mq{
+      padding: 0 1em 0 1em;
+    }
+  }
+  &__p-content{
+    color: darken($gray, 40%);
+    font-size: 20px;
+
+  //media query mixin to change p font size for screen//
+    @include $mq{
+    font-size: 16px;
+    }
+  }
+  &__linkedin-img{
+    float: left;
+    padding-right: 1em;
+
+  //media query mixin to change linkedin image size for screen//
+    @include $mq{
+      padding-right: 0.5em;
+      width: 15%;
+    }
+  }
+}
