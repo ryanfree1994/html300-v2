@@ -5,7 +5,7 @@
 @import 'components.content';
 // Imported partials created by me
 @import 'font.variables';
-@import 'display.variables'
+@import 'display.variables';
 
 
 .main{
@@ -80,6 +80,7 @@
   //media query mixin to change content card padding for screen//
     @include $mq{
       padding: 0 1em 0 1em;
+      width: auto;
     }
   }
   &__p-content{
