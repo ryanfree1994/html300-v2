@@ -74,13 +74,12 @@
   }
   &__card-content{
     background-color: $gray;
-    padding: 0 5em 0 2em;
     align-self: $center;
 
   //media query mixin to change content card padding for screen//
     @include $mq{
       padding: 0 1em 0 1em;
-      width: auto;
+      width: 100%;
     }
   }
   &__p-content{
