@@ -58,7 +58,7 @@ const linkedInHTML = linkedIn_data.map(function(template) {
   let linkedIn_person =
   `<div class="main">
       <div class="main__first-background">
-        <div id="head-title" class="main__head-title">
+        <div class="main__head-title">
           <img src="img/unsplash-headshot.jpg" alt="Photo of Steve Smith headshot" class="main__img-headshot">
           <h1 class="main__h1">${template.name}</h1>
           <p class="main__p">${template.jobTitle}</p>

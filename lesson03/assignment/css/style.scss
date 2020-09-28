@@ -3,8 +3,8 @@
 @import 'settings.variables';
 @import 'settings.responsive';
 @import 'components.content'; // Imported partials created by me
-@import 'font.variables';
 @import 'display.variables';
+@import 'font.variables';
 
 .main {
   background-color: $gray;
@@ -46,6 +46,15 @@
     }
   }
 
+  &__img-headshot {
+    width: 60%;
+    border-radius: 50%;
+    //media query mixin to change image size for screen//
+    @include $mq {
+      width: 100%;
+    }
+  }
+
   &__h1 {
     font-size: $large;
     color: darken($gray, 40%);
@@ -58,15 +67,6 @@
     //media query mixin to change font size for screen//
     @include $mq {
       font-size: $small;
-    }
-  }
-
-  &__img-headshot {
-    width: 60%;
-    border-radius: 50%;
-    //media query mixin to change image size for screen//
-    @include $mq {
-      width: 100%;
     }
   }
 
