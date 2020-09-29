@@ -71,6 +71,7 @@ const linkedInHTML = linkedIn_data.map(function(template) {
           <p class="main__p-content"><b>Email: </b>${template.email}</p>
           <img class="main__linkedin-img" src="img/linkedin.svg" alt="LinkedIn logo">
           <p class="main__p-content">${template.linkedInUrl}</p>
+          <p class="main__p-content"><b>Languages: </b>${template.codeLanguages[0]}, ${template.codeLanguages[1]}, ${template.codeLanguages[2]}, ${template.codeLanguages[3]}, ${template.codeLanguages[4]}</p>
         </div>
       </div>
   </div>`;
@@ -81,5 +82,5 @@ const linkedInHTML = linkedIn_data.map(function(template) {
 const insert_template = document.getElementById("template-hook");
 
 for (let i = 0; i < linkedIn_data.length; i++) {
-  insert_template.insertAdjacentHTML("afterbegin", linkedInHTML[i]);
+  insert_template.insertAdjacentHTML("beforeend", linkedInHTML[i]);
 }
