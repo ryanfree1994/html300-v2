@@ -12,7 +12,11 @@
 
 <body>
   <main class="main">
-    <!-- goal is to have stars sparkle when nav elements are hovered-->
+    <!--shooting stars when nav element is hovered-->
+    <div class="main__shootingstar" id="starshooter1"></div>
+    <div class="main__shootingstar" id="starshooter2"></div>
+    <div class="main__shootingstar" id="starshooter3"></div>
+    <!--twinkling stars background in header area-->
     <div class="main__star-0 main__stars"></div>
     <div class="main__star-1 main__stars"></div>
     <div class="main__star-2 main__stars"></div>
@@ -24,18 +28,25 @@
     <div class="main__star-8 main__stars"></div>
     <div class="main__star-9 main__stars"></div>
 
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Attractions</li>
-        <li>Tickets</li>
-        <li>Hours</li>
-        <li>About</li>
-        <li>Contact</li>
+    <!--nav bar with site name-->
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li"><a class="nav__link" href="">Home</a></li>
+        <li class="nav__li"><a class="nav__link" href="">Attractions</a></li>
+        <li class="nav__li"><a class="nav__link" href="">Tickets</a></li>
+        <li class="nav__li nav__spacelandtitle">SPACELAND</li>
+        <li class="nav__li"><a class="nav__link" href="">Hours</a></li>
+        <li class="nav__li"><a class="nav__link" href="">About</a></li>
+        <li class="nav__li"><a class="nav__link" href="">Contact</a></li>
       </ul>
     </nav>
+    <div class="main__h1">
+      <h1>THE NOSTALGIA AND EXCITEMENT OF SPACE IN ONE PLACE</h1>
+    </div>
 
   </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
