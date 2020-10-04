@@ -1,8 +1,4 @@
-/*$('.nav__link').hover(function(e){
- $(this).addClass('.nav__link--hover');
-}, function(){
-$(this).removeClass('.nav__link--hover');
-});*/
+/*user hovers on nav item and shooting stars fly across screen, as well as yellow orb appearing around nav item*/
 
 $('.nav__link').hover(function(e) {
   $('#starshooter1').addClass('main__starshooter1');
