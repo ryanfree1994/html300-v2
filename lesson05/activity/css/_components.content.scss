@@ -1,13 +1,48 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:after,
 *:before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .main {
-    padding: 2rem;
+  padding: 2rem;
+
+  &__nav {
+    color: $white;
+    background-color: $teal;
+    font-family: $font-fam;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  &__ul {}
+
+  &__li {
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  &__midlidiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__midli {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1em;
+    text-decoration: underline;
+    font-size: 1em;
+    @include media-query("mobile") {
+      padding: 1em;
+    }
+  }
 }

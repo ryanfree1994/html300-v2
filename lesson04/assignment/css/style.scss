@@ -1,0 +1,239 @@
+/*css idea source: https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/animate-elements-at-variable-rates*/
+@import "color.variables";
+@import "size.variables";
+@import "font.variables";
+@import "settings.responsive";
+@import "flex.responsive";
+
+body {
+  background-color: $black;
+  width: $hundredper;
+  height: $hundredper;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  font-family: $redhat, $sans;
+  @include media-query("mobile") {
+    width: auto;
+    height: $hundredper;
+  }
+
+  .main {
+    /*twinkling stars style*/
+    &__stars {
+      height: $seven;
+      width: $seven;
+      border-radius: $hundredper;
+      animation-iteration-count: infinite;
+    }
+    /*shooting stars style*/
+    &__shootingstar {
+      height: $ten;
+      width: $ten;
+      border-radius: $hundredper;
+      animation-iteration-count: infinite;
+    }
+    /*shooting stars animation*/
+    &__starshooter1 {
+      margin-top: $zeroper;
+      margin-left: $zeroper;
+      animation-name: shootingstar;
+      animation-duration: 3s;
+    }
+
+    &__starshooter2 {
+      margin-top: $zeroper;
+      margin-left: $zeroper;
+      animation-name: shootingstar;
+      animation-duration: 1s;
+    }
+
+    &__starshooter3 {
+      margin-top: $zeroper;
+      margin-left: $zeroper;
+      animation-name: shootingstar;
+      animation-duration: 4s;
+    }
+    /*twinkling stars animation*/
+    &__star-0 {
+      margin-top: $threeper;
+      margin-left: $fiftyper;
+      animation-name: twinkle3;
+      animation-duration: 1.75s;
+    }
+
+    &__star-1 {
+      margin-top: $oneper;
+      margin-left: $tenper;
+      animation-name: twinkle2;
+      animation-duration: 2s;
+    }
+
+    &__star-2 {
+      margin-top: $oneper;
+      margin-left: $eightyper;
+      animation-name: twinkle1;
+      animation-duration: 1.5s;
+    }
+
+    &__star-3 {
+      margin-top: $oneper;
+      margin-left: $quarterper;
+      animation-name: twinkle3;
+      animation-duration: 1.8s;
+    }
+
+    &__star-4 {
+      margin-top: $oneper;
+      margin-left: $twoper;
+      animation-name: twinkle1;
+      animation-duration: 3s;
+    }
+
+    &__star-5 {
+      margin-top: $oneper;
+      margin-left: $fiftyfiveper;
+      animation-name: twinkle1;
+      animation-duration: 1.5s;
+    }
+
+    &__star-6 {
+      margin-top: $oneper;
+      margin-left: $ninetyper;
+      animation-name: twinkle1;
+      animation-duration: 3s;
+    }
+
+    &__star-7 {
+      margin-top: $oneper;
+      margin-left: $seventyper;
+      animation-name: twinkle3;
+      animation-duration: 1.75s;
+    }
+
+    &__star-8 {
+      margin-top: $oneper;
+      margin-left: $twentyper;
+      animation-name: twinkle3;
+      animation-duration: 1.5s;
+    }
+
+    &__star-9 {
+      margin-top: $oneper;
+      margin-left: $fortyper;
+      animation-name: twinkle1;
+      animation-duration: 4s;
+    }
+
+    &__h1 {
+      color: $white;
+      text-align: center;
+      font-size: $one;
+      @include media-query("mobile") {
+        font-size: $half;
+        padding: $two;
+      }
+    }
+
+    &__mobiletitle {
+      color: $white;
+      display: none;
+      font-family: $redhat;
+      text-align: center;
+      padding-top: $one;
+      @include media-query("mobile") {
+        display: block;
+      }
+    }
+  }
+  @keyframes shootingstar {
+    0% {
+      transform: translate($thousand, $thousand);
+      background-color: $white;
+    }
+  }
+  @keyframes twinkle1 {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+
+    50% {
+      opacity: 0.5;
+      background-color: $darkorange;
+    }
+  }
+  @keyframes twinkle2 {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.75;
+    }
+
+    50% {
+      opacity: 0.5;
+      background-color: $darkred;
+    }
+  }
+  @keyframes twinkle3 {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.25;
+    }
+
+    50% {
+      opacity: 0.5;
+      background-color: $lightorange;
+    }
+  }
+  /*nav bar animation*/
+  .nav {
+    color: $white;
+    border-bottom: $two $white solid;
+    /*add planet background from NASA*/
+    &__ul {
+      @include flex;
+      align-items: center;
+      padding: $one;
+      margin: $half;
+    }
+
+    &__li {
+      display: block;
+      color: $silver;
+      @include media-query("mobile") {
+        line-height: $three;
+      }
+    }
+
+    &__spacelandtitle {
+      font-size: $four;
+      color: $white;
+      @include media-query("mobile") {
+        display: none;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $silver;
+      padding: $one;
+    }
+
+    &__link--hover {
+      animation: hoverfill 2s forwards;
+      border-radius: $hundredper;
+    }
+  }
+  @keyframes hoverfill {
+    0% {
+      color: $black;
+    }
+
+    100% {
+      background-color: $lemonyellow;
+      color: $black;
+      opacity: 1;
+    }
+  }
+}
