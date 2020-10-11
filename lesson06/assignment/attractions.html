@@ -1,0 +1,77 @@
+<!--Page 2: Page with Fluid/Responsive Images-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+  <title>Assignment 06 - Bootstrap 4</title>
+</head>
+
+<body>
+  <main class="main">
+    <!--mobile nav bar title // visible in media query-->
+    <div class="text-center d-sm-none">
+      <h1 class="display-5">SPACELAND</h1>
+    </div>
+    <!--nav bar with site name: non-mobile-->
+    <!--responsive navbar that navigates across all four pages-->
+    <nav class="nav navbar navbar-expand-lg">
+      <button class="navbar-toggler navbar-dark ml-auto mr-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon border border-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav nav__ul list-inline">
+          <li class="nav-item nav__li list-inline-item"><a class="nav-link nav__link" href="index.html">Home</a></li>
+          <li class="nav-item active  nav__li list-inline-item"><a class="nav-link nav__link" href="">Attractions</a></li>
+          <li class="nav-item nav__li display-3 list-inline-item nav__spacelandtitle d-none d-md-block">SPACELAND</li>
+          <li class="nav-item nav__li list-inline-item"><a class="nav-link nav__link" href="about.html">About</a></li>
+          <li class="nav-item nav__li list-inline-item"><a class="nav-link nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--desktop nav bar sub-title-->
+    <div class="main__h1 d-none d-md-block">
+      <h1 class="display-5">THE NOSTALGIA AND EXCITEMENT OF SPACE IN ONE PLACE</h1>
+    </div>
+
+    <h2 class="text-danger text-center m-4 p-5">ATTRACTIONS</h2>
+
+    <div class="d-flex flex-wrap justify-content-center p-3 m-5 border border-warning">
+      <h2 class="d-flex display-4 p-3 text-center align-items-center">The Orbital</h2>
+      <p class="display-5 text-center">Are you ready to be spun at the velocity of the Earth? This ride is great for people who love thrills and speed. Each spaceship has a max capacity of two passengers. You must be at least 5' 6" to ride. Please
+        make sure to avoid eating at least two hours prior to riding.</p>
+      <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1578596856839-90f58e8d7d19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="An image of the orbital ride">
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center p-3 m-5 border border-warning">
+      <h2 class="d-flex display-4 p-3 text-center align-items-center">Neptune's Water Falls</h2>
+      <p class="display-5 text-center">You will need a towel for this ride. Neptune is an ice planet and it is experiencing a heat wave, resulting in many waterfalls. This ride will take you through the waterfalls to not be refreshed, but to also
+        view the spectacular water on Neptune. This ride is great for people who prefer calmer rides. Each pod has a max capacity of thirteen passengers. There is no minimun height requirement. Children must be accompanied by parents/guardians.</p>
+      <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1562797795-9184009062f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="An image of the orbital ride">
+    </div>
+
+    <div class="d-flex flex-wrap justify-content-center p-3 m-5 border border-warning">
+      <h2 class="d-flex display-4 p-3 text-center align-items-center">Saturn's Rings</h2>
+      <p class="display-5 text-center">Come and see what the views are like on Saturn's Rings. This ride will gradually spin you around the planet on its rings, so that you can view it's glorious landscape. Space cadets can have their own ship or
+        share it with up to five people. There is no minimun height requirement. Children must be accompanied by parents/guardians.</p>
+      <img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1484587658517-51c2ea232f9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="An image of the orbital ride">
+    </div>
+
+    <footer class="main__footer">
+      <p>SPACELAND &copy; 2020</p>
+    </footer>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

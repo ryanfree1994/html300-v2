@@ -1,4 +1,5 @@
-<!--Page 1: Landing Page with Some Content and Tooltips-->
+<!--Page 4: Page with Accordian Component-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,22 +15,6 @@
 
 <body>
   <main class="main">
-    <!--shooting stars when nav element is hovered-->
-    <div class="main__shootingstar" id="starshooter1"></div>
-    <div class="main__shootingstar" id="starshooter2"></div>
-    <div class="main__shootingstar" id="starshooter3"></div>
-    <!--twinkling stars background in header area-->
-    <div class="main__star-0 main__stars"></div>
-    <div class="main__star-1 main__stars"></div>
-    <div class="main__star-2 main__stars"></div>
-    <div class="main__star-3 main__stars"></div>
-    <div class="main__star-4 main__stars"></div>
-    <div class="main__star-5 main__stars"></div>
-    <div class="main__star-6 main__stars"></div>
-    <div class="main__star-7 main__stars"></div>
-    <div class="main__star-8 main__stars"></div>
-    <div class="main__star-9 main__stars"></div>
-
     <!--mobile nav bar title // visible in media query-->
     <div class="text-center d-sm-none">
       <h1 class="display-5">SPACELAND</h1>
@@ -42,11 +27,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav nav__ul list-inline">
-          <li class="nav-item active nav__li list-inline-item"><a class="nav-link nav__link" href="">Home</a></li>
+          <li class="nav-item nav__li list-inline-item"><a class="nav-link nav__link" href="index.html">Home</a></li>
           <li class="nav-item nav__li list-inline-item"><a class="nav-link nav__link" href="attractions.html">Attractions</a></li>
           <li class="nav-item nav__li display-3 list-inline-item nav__spacelandtitle d-none d-md-block">SPACELAND</li>
           <li class="nav-item nav__li list-inline-item"><a class="nav-link nav__link" href="about.html">About</a></li>
-          <li class="nav-item nav__li list-inline-item"><a class="nav-link nav__link" href="contact.html">Contact</a></li>
+          <li class="nav-item active nav__li list-inline-item"><a class="nav-link nav__link" href="">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -55,22 +40,37 @@
       <h1 class="display-5">THE NOSTALGIA AND EXCITEMENT OF SPACE IN ONE PLACE</h1>
     </div>
 
-    <div class="main__moon d-flex justify-content-center mt-5 mb-5 pt-5 pb-5">
-      <p class="main__moon__p d-flex align-items-center p-0.5">ORBIT SPACE THIS SEASON!</br>TICKETS START AT $95</p>
-    </div>
+    <h2 class="text-danger text-center m-4 p-5">CONTACT</h2>
 
-    <div class="d-flex main__end mb-5">
-      <div class="d-flex flex-wrap justify-content-center p-1" data-toggle='tooltip' data-placement='top' title='Check back soon for more details!'>
-        <p>CAMP ON MARS WITH FRIENDS</p>
-        <img class="w-75" src="https://images.unsplash.com/photo-1517824806704-9040b037703b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="An image of camping on mars">
+    <div class="m-5" id="accordion">
+      <div class="card m-5">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              E-mail Us
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body text-danger text-center">
+            Feel free to send us an e-mail via spaceland@gmail.com
+          </div>
+        </div>
       </div>
-      <div class="d-flex flex-wrap justify-content-center p-1" data-toggle='tooltip' data-placement='top' title='Check back soon for more details!'>
-        <p>TALK TO AN ASTRONAUT</p>
-        <img class="w-75" src="https://images.unsplash.com/photo-1457979406492-d1e6b97f3f55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="An image of an astronaut in space suit">
-      </div>
-      <div class="d-flex flex-wrap justify-content-center p-1" data-toggle='tooltip' data-placement='top' title='Check back soon for more details!'>
-        <p>WATCH THE SPACE RACE</p>
-        <img class="w-75" src="https://images.unsplash.com/photo-1563955764659-fb0b2725fc1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="An image of a vintage television">
+      <div class="card m-5">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Call Us
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body text-danger text-center">
+            Feel free to call us at 1 - 800 - SPACELAND
+          </div>
+        </div>
       </div>
     </div>
 
