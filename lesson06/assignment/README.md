@@ -1,12 +1,12 @@
 # Assignment 06 - Bootstrap 4
 
 We will be working with Bootstrap 4 to create a series of pages using Bootstrap components and features. You will create four pages that will contain:
-- A navbar that navigates across the four pages
-- Use of tooltips or popovers somewhere on one of the pages
-- Page 1: A landing page with some content
-- Page 2: A page with images using Bootstrap 4 responsive/fluid images
-- Page 3: A page with a layout that utilizes the Bootstrap 4 grid system, make sure page components use at least 3 bootstrap sizes (XS, SM, MD, LG, XL)
-- Page 4: A page that uses a Bootstrap 4 accordion component
+- A navbar that navigates across the four pages - DONE (RF)
+- Use of tooltips or popovers somewhere on one of the pages - DONE (RF)
+- Page 1: A landing page with some content - DONE (RF)
+- Page 2: A page with images using Bootstrap 4 responsive/fluid images - DONE (RF)
+- Page 3: A page with a layout that utilizes the Bootstrap 4 grid system, make sure page components use at least 3 bootstrap sizes (XS, SM, MD, LG, XL) - DONE (RF)
+- Page 4: A page that uses a Bootstrap 4 accordion component - DONE (RF)
 
 These pages can be copied over to your final project later, so create them using the content (text, images) that you want in the final site.
 

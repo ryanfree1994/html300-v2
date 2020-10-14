@@ -3,4 +3,257 @@
 @import 'settings.variables';
 @import 'settings.responsive';
 @import 'components.content';
+@import 'settings.responsive';
+@import 'settings.variables';
+@import 'size.variables';
+@import 'font.variables';
+@import 'display.responsive';
 
+*{
+  box-sizing: border-box;
+}
+
+html, .main {
+  background-color: $black;
+  color: $white;
+  width: $hundredper;
+  height: $hundredper;
+  font-family: $redhat, $sans;
+  @include media-query("mobile") {
+    width: auto;
+    height: $hundredper;
+  }
+  /*twinkling stars style*/
+  &__stars {
+    height: $seven;
+    width: $seven;
+    border-radius: $hundredper;
+    animation-iteration-count: infinite;
+  }
+  /*shooting stars style*/
+  &__shootingstar {
+    height: $ten;
+    width: $ten;
+    border-radius: $hundredper;
+    animation-iteration-count: infinite;
+  }
+  /*shooting stars animation*/
+  &__starshooter1 {
+    margin-top: $zeroper;
+    margin-left: $zeroper;
+    animation-name: shootingstar;
+    animation-duration: 3s;
+  }
+
+  &__starshooter2 {
+    margin-top: $zeroper;
+    margin-left: $zeroper;
+    animation-name: shootingstar;
+    animation-duration: 1s;
+  }
+
+  &__starshooter3 {
+    margin-top: $zeroper;
+    margin-left: $zeroper;
+    animation-name: shootingstar;
+    animation-duration: 4s;
+  }
+  /*twinkling stars animation*/
+  &__star-0 {
+    margin-top: $threeper;
+    margin-left: $fiftyper;
+    animation-name: twinkle3;
+    animation-duration: 1.75s;
+  }
+
+  &__star-1 {
+    margin-top: $oneper;
+    margin-left: $tenper;
+    animation-name: twinkle2;
+    animation-duration: 2s;
+  }
+
+  &__star-2 {
+    margin-top: $oneper;
+    margin-left: $eightyper;
+    animation-name: twinkle1;
+    animation-duration: 1.5s;
+  }
+
+  &__star-3 {
+    margin-top: $oneper;
+    margin-left: $quarterper;
+    animation-name: twinkle3;
+    animation-duration: 1.8s;
+  }
+
+  &__star-4 {
+    margin-top: $oneper;
+    margin-left: $twoper;
+    animation-name: twinkle1;
+    animation-duration: 3s;
+  }
+
+  &__star-5 {
+    margin-top: $oneper;
+    margin-left: $fiftyfiveper;
+    animation-name: twinkle1;
+    animation-duration: 1.5s;
+  }
+
+  &__star-6 {
+    margin-top: $oneper;
+    margin-left: $ninetyper;
+    animation-name: twinkle1;
+    animation-duration: 3s;
+  }
+
+  &__star-7 {
+    margin-top: $oneper;
+    margin-left: $seventyper;
+    animation-name: twinkle3;
+    animation-duration: 1.75s;
+  }
+
+  &__star-8 {
+    margin-top: $oneper;
+    margin-left: $twentyper;
+    animation-name: twinkle3;
+    animation-duration: 1.5s;
+  }
+
+  &__star-9 {
+    margin-top: $oneper;
+    margin-left: $fortyper;
+    animation-name: twinkle1;
+    animation-duration: 4s;
+  }
+  @keyframes shootingstar {
+    0% {
+      transform: translate($thousand, $thousand);
+      background-color: $white;
+    }
+  }
+  @keyframes twinkle1 {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+
+    50% {
+      opacity: 0.5;
+      background-color: $darkorange;
+    }
+  }
+  @keyframes twinkle2 {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.75;
+    }
+
+    50% {
+      opacity: 0.5;
+      background-color: $darkred;
+    }
+  }
+  @keyframes twinkle3 {
+    0% {
+      transform: scale(0.5);
+      opacity: 0.25;
+    }
+
+    50% {
+      opacity: 0.5;
+      background-color: $lightorange;
+    }
+  }
+  .nav {
+    color: $white;
+    border-bottom: $two $white solid;
+    @include flex;
+    &__ul {
+      @include flex;
+    }
+
+    &__li {
+      display: block;
+      color: $silver;
+      @include media-query("mobile") {
+        line-height: $three;
+      }
+    }
+
+    &__spacelandtitle {
+      color: $white;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $silver;
+      padding: $one;
+    }
+
+    &__link--hover {
+      animation: hoverfill 2s forwards;
+      border-radius: $hundredper;
+      @include media-query("mobile"){
+        animation: underline 1s;
+      }
+    }
+  }
+  @keyframes hoverfill {
+    0% {
+      color: $black;
+    }
+
+    100% {
+      background-color: $lemonyellow;
+      color: $black;
+      opacity: 1;
+    }
+  }
+  @keyframes underline {
+    0% {
+      text-decoration: underline;
+      color: $lemonyellow;
+    }
+
+    100% {
+      text-decoration: underline;
+      color: $lemonyellow;
+    }
+  }
+  &__h1{
+    text-align: center;
+    font-size: $one;
+  }
+  &__moon{
+    text-align: center;
+    font-size: $twohalf;
+    background-image: url(https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-query("mobile"){
+      font-size: $onehalf;
+    }
+
+    &__p{
+      color: $lemonyellow;
+    }
+  }
+
+  &__end{
+    margin: auto;
+    text-align: center;
+  }
+
+  &__footer{
+    border-top: $two $white solid;
+    text-align: center;
+  }
+}
+
+.active{
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
