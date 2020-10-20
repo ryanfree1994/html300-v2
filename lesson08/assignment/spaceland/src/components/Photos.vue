@@ -8,7 +8,7 @@
     <!-- something needs to be added to class in order for styling to occur for image -->
       <img
       :class="borderStyle"
-      @click="addBorder"
+      @click="toggleBorder"
 
       v-for="photo in photos"
       :key="photo.id"

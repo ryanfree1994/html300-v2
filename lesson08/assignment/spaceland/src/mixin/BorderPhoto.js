@@ -7,8 +7,8 @@ export const border = {
     }
   },
   methods: {
-    addBorder() {
-      this.borderStyle = 'border border-white m-3 w-25'
+    toggleBorder() {
+      this.borderStyle = 'border border-white m-3 w-25';
     }
   }
 }
